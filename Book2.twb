@@ -1,0 +1,413 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='NBA MLB Attend 2.1 (NBA MLB Attend 2.1)' inline='true' name='federated.1dvbo7l1vcxh9a12n90fz18awmzx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='NBA MLB Attend 2.1' name='excel-direct.188uhh90d1630y17hz2yk0112qk2'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/Simon/Documents/Profolio/NBA MLB Attend 2.1.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.188uhh90d1630y17hz2yk0112qk2' name='NBA MLB Attend 2.1' table='[&apos;NBA MLB Attend 2#1$&apos;]' type='table'>
+          <columns gridOrigin='A1:D10:no:A1:D10:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Starting_Year' ordinal='0' />
+            <column datatype='integer' name='NBA_Attendance' ordinal='1' />
+            <column datatype='integer' name='MLB_Attendance' ordinal='2' />
+            <column datatype='integer' name='Total_Attendance' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[NBA MLB Attend 2.1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:D10:no:A1:D10:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Starting_Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Starting_Year]</local-name>
+            <parent-name>[NBA MLB Attend 2.1]</parent-name>
+            <remote-alias>Starting_Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NBA_Attendance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NBA_Attendance]</local-name>
+            <parent-name>[NBA MLB Attend 2.1]</parent-name>
+            <remote-alias>NBA_Attendance</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MLB_Attendance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MLB_Attendance]</local-name>
+            <parent-name>[NBA MLB Attend 2.1]</parent-name>
+            <remote-alias>MLB_Attendance</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total_Attendance</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total_Attendance]</local-name>
+            <parent-name>[NBA MLB Attend 2.1]</parent-name>
+            <remote-alias>Total_Attendance</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <object-id>[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='MLB Attendance' datatype='integer' name='[MLB_Attendance]' role='measure' type='quantitative' />
+      <column caption='NBA Attendance' datatype='integer' name='[NBA_Attendance]' role='measure' type='quantitative' />
+      <column caption='Starting Year' datatype='integer' name='[Starting_Year]' role='dimension' type='quantitative' />
+      <column caption='Total Attendance' datatype='integer' name='[Total_Attendance]' role='measure' type='quantitative' />
+      <column caption='NBA MLB Attend 2.1' datatype='table' name='[__tableau_internal_object_id__].[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[MLB_Attendance]' derivation='Sum' name='[sum:MLB_Attendance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[NBA_Attendance]' derivation='Sum' name='[sum:NBA_Attendance:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total_Attendance]' derivation='Sum' name='[sum:Total_Attendance:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Simon/AppData/Local/Temp/TableauTemp/#TableauTemp_0nqnm2l0yphwvo13vdpvq1qycu0a.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/27/2025 07:46:53 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Starting_Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Starting_Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Starting_Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>NBA MLB Attend 2.1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NBA_Attendance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[NBA_Attendance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NBA_Attendance</remote-alias>
+              <ordinal>1</ordinal>
+              <family>NBA MLB Attend 2.1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MLB_Attendance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MLB_Attendance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MLB_Attendance</remote-alias>
+              <ordinal>2</ordinal>
+              <family>NBA MLB Attend 2.1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total_Attendance</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Total_Attendance]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total_Attendance</remote-alias>
+              <ordinal>3</ordinal>
+              <family>NBA MLB Attend 2.1</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[__tableau_internal_object_id__].[cnt:NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[sum:Total_Attendance:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[sum:NBA_Attendance:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[sum:MLB_Attendance:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='NBA MLB Attend 2.1' id='NBA MLB Attend 2.1_1E63A268BF6644499E5FB96F2729CE09'>
+            <properties context=''>
+              <relation connection='excel-direct.188uhh90d1630y17hz2yk0112qk2' name='NBA MLB Attend 2.1' table='[&apos;NBA MLB Attend 2#1$&apos;]' type='table'>
+                <columns gridOrigin='A1:D10:no:A1:D10:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Starting_Year' ordinal='0' />
+                  <column datatype='integer' name='NBA_Attendance' ordinal='1' />
+                  <column datatype='integer' name='MLB_Attendance' ordinal='2' />
+                  <column datatype='integer' name='Total_Attendance' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='NBA MLB Attend 2.1 (NBA MLB Attend 2.1)' name='federated.1dvbo7l1vcxh9a12n90fz18awmzx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1dvbo7l1vcxh9a12n90fz18awmzx'>
+            <column caption='MLB Attendance' datatype='integer' name='[MLB_Attendance]' role='measure' type='quantitative' />
+            <column caption='NBA Attendance' datatype='integer' name='[NBA_Attendance]' role='measure' type='quantitative' />
+            <column caption='Starting Year' datatype='integer' name='[Starting_Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Starting_Year]' derivation='None' name='[none:Starting_Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[MLB_Attendance]' derivation='Sum' name='[sum:MLB_Attendance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[NBA_Attendance]' derivation='Sum' name='[sum:NBA_Attendance:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[sum:MLB_Attendance:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[sum:NBA_Attendance:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[Multiple Values]</rows>
+        <cols>[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[none:Starting_Year:qk]</cols>
+      </table>
+      <simple-id uuid='{E21BF64F-AA1B-4334-9DBB-F1F3291CB254}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[:Measure Names]</field>
+            <field>[federated.1dvbo7l1vcxh9a12n90fz18awmzx].[none:Starting_Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2FA7322D-2702-4B53-B8CD-68FC30EC40C8}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      Hy5P9PgD4ARPAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
